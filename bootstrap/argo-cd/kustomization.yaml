@@ -17,18 +17,7 @@ configMapGenerator:
 - name: argocd-cmd-params-cm
   behavior: merge
   literals:
-  - server.basehref=/
-  - server.dex.server.strict.tls=false
-  - server.disable.auth=false
-  - server.enable.gzip=true
-  - server.enable.proxy.extension=false
   - server.insecure=true
-  - server.log.format=text
-  - server.log.level=info
-  - server.repo.server.strict.tls=false
-  - server.rootpath=
-  - server.staticassets=/shared/app
-  - server.x.frame.options=sameorigin
   
 kind: Kustomization
 namespace: argocd
