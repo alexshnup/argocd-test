@@ -34,5 +34,5 @@ kind: Kustomization
 namespace: argocd
 resources:
 - github.com/argoproj-labs/argocd-autopilot/manifests/base?ref=v0.4.18
-- ingress.yaml
+- ingress-http.yaml
 - ingress-grpc.yaml
