@@ -19,7 +19,7 @@ spec:
       - name: nginx
         image: nginx:latest
         ports:
-        - containerPort: 81
+        - containerPort: 80
 ---
 # service.yaml
 apiVersion: v1
@@ -31,6 +31,6 @@ spec:
     app: nginx
   ports:
     - protocol: TCP
-      port: 81
+      port: 80
       targetPort: 81
   type: ClusterIP
